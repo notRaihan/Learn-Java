@@ -128,15 +128,41 @@ public class Main {
 //        }
 
 //        Practicing OOP Inheritance
-        Car bmw = new Car("Land","BMW");
-        Motorcycle ninja = new Motorcycle("Land","Ninja");
+//        Car bmw = new Car("Land","BMW");
+//        Motorcycle ninja = new Motorcycle("Land","Ninja");
+//
+//        bmw.turn("Right");
+//        bmw.honk();
+//        System.out.println(bmw.wheels);
+//        ninja.wheeling(6);
+//        ninja.turn("Left");
 
-        bmw.turn("Right");
-        bmw.honk();
-        System.out.println(bmw.wheels);
-        ninja.wheeling(6);
-        ninja.turn("Left");
+        /*
+         * Exercise 3:
+         * a) Trivia Game with CLASSES and Objects:
+         * Modify the Trivia Game we have made in the previous two exercises in such a way to use Classes as well.
+         * Imagine possible making custom classes for Question Answer Pairs, using Lists to save them
+         *
+         * b) Bank Management System:
+         * Create a Bank Management System which has the following components:
+         * Person (which saves first, middle and last name, age and a "social security number")
+         * Bank (which saves a List of customers and their Checking Accounts, maximum overdraw amount)
+         * Checking Account (should have a current value, methods for taking and depositing money)
+         * Opening a Checking Account should only work via a Bank and must require a certain amount of initial deposit.
+         *
+         * BONUS: Make the Banking System Interactive (No Solution provided!)
+         *
+         *
+         */
 
+        Person maria = new Person("Maria","James",25,441);
+        Person lebron = new Person("Lebron","Jonathan",22,434);
+        maria.deposit(400);
+        lebron.deposit(600);
+        lebron.withdraw(300);
 
+        lebron.checkAccount();
+        maria.checkAccount();
+        System.out.println(Bank.totalPerson);
     }
 }
