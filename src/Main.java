@@ -1,4 +1,4 @@
-import java.util.Scanner;
+//import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
@@ -20,6 +20,8 @@ public class Main {
          * 2. When you have an answer and input that are both strings you will have to use:
          *    userInput.equals(answer) instead of userInput == answer
          */
+
+
         /*
          *        Scanner inpObj = new Scanner(System.in);
          *
@@ -77,52 +79,64 @@ public class Main {
          *
          */
 
-        String[] questions = new String[5];
-        questions[0] = "1. who created Minecraft?";
-        questions[1] = "2. what's the capital city of indonesia?";
-        questions[2] = "3. do i like coding?";
-        questions[3] = "4. what's my fav food?";
-        questions[4] = "5. what's my hobby?";
+//        String[] questions = new String[5];
+//        questions[0] = "1. who created Minecraft?";
+//        questions[1] = "2. what's the capital city of indonesia?";
+//        questions[2] = "3. do i like coding?";
+//        questions[3] = "4. what's my fav food?";
+//        questions[4] = "5. what's my hobby?";
+//
+//        String[] answers = new String[5];
+//        answers[0] = "notch";
+//        answers[1] = "jakarta";
+//        answers[2] = "yes";
+//        answers[3] = "chicken";
+//        answers[4] = "workout";
+//        int points = 0;
+//
+//
+//
+//        //        Question 1
+//        System.out.println(questions[0]);
+//        points += checkAnswer(answers[0]);
+//        //        Question 2
+//        System.out.println(questions[1]);
+//        points += checkAnswer(answers[1]);
+//        //        Question 3
+//        System.out.println(questions[2]);
+//        points += checkAnswer(answers[2]);
+//        //        Question 4
+//        System.out.println(questions[3]);
+//        points += checkAnswer(answers[3]);
+//        //        Question 5
+//        System.out.println(questions[4]);
+//        points += checkAnswer(answers[4]);
+//
+//        // Total Points
+//        System.out.println("Total Points: " + points);
+//    }
+//    public static int checkAnswer(String answers) {
+//        Scanner inpObj = new Scanner(System.in);
+//        String userInp = inpObj.next();
+//        if (userInp.equals(answers)) {
+//            System.out.println("Correct");
+//            return 1;
+//        } else {
+//            System.out.println("Incorrect!");
+//            System.out.println("The answer is: " + answers);
+//            return 0;
+//        }
 
-        String[] answers = new String[5];
-        answers[0] = "notch";
-        answers[1] = "jakarta";
-        answers[2] = "yes";
-        answers[3] = "chicken";
-        answers[4] = "workout";
-        int points = 0;
+//        Practicing OOP Inheritance
+        Car bmw = new Car("Land","BMW");
+        Motorcycle ninja = new Motorcycle("Land","Ninja");
+
+        bmw.turn("Right");
+        bmw.honk();
+        System.out.println(bmw.wheels);
+        ninja.wheeling(6);
+        ninja.turn("Left");
 
 
-
-        //        Question 1
-        System.out.println(questions[0]);
-        points += checkAnswer(answers[0]);
-        //        Question 2
-        System.out.println(questions[1]);
-        points += checkAnswer(answers[1]);
-        //        Question 3
-        System.out.println(questions[2]);
-        points += checkAnswer(answers[2]);
-        //        Question 4
-        System.out.println(questions[3]);
-        points += checkAnswer(answers[3]);
-        //        Question 5
-        System.out.println(questions[4]);
-        points += checkAnswer(answers[4]);
-
-        // Total Points
-        System.out.println("Total Points: " + points);
-    }
-    public static int checkAnswer(String answers) {
-        Scanner inpObj = new Scanner(System.in);
-        String userInp = inpObj.next();
-        if (userInp.equals(answers)) {
-            System.out.println("Correct");
-            return 1;
-        } else {
-            System.out.println("Incorrect!");
-            System.out.println("The answer is: " + answers);
-            return 0;
-        }
     }
 }
